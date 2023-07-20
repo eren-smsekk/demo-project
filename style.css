@@ -44,11 +44,6 @@ body {
         flex-direction: column;
     }
 
-    .video-js {
-        width: 100% !important;
-        height: 300px;
-    }
-
     .audio-box {
         flex-direction: column;
     }
