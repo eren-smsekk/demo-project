@@ -43,7 +43,7 @@ body {
     .piece-box {
         flex-direction: column;
     }
-
+    
     .audio-box {
         flex-direction: column;
     }
