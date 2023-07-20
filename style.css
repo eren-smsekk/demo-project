@@ -40,6 +40,9 @@ p,a,span {
     margin: 10px;
 }
 
+/* Gallery */
+
+
 @media (max-width: 991px) {
     .section-1 {
         flex-direction: column !important;

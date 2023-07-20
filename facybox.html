@@ -8,114 +8,135 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="yourpath/all-animation.css" />
     <link rel="stylesheet" href="magic-master/dist/magic.min.css">
-    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css"/>
+    <style>
+      #myCarousel {
+        max-width: 640px;
+        margin: 0 auto;
+      }
 
-    <link rel="stylesheet" href="style.css">
+      #myCarousel .f-carousel__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    </style>
   </head>
   <body class="vh-100 bg-">
-    
-    <div class="container">
-      <div class="row my-4 section-1">
-        <div class="col-12">
-          <div class="img-section">
-            <img src="img/ASM-Logo.png" class="img-fluid text-center animate__animated animate__fadeIn" width="300" height="100">
-          </div>
-          <div class="piece-box mt-5 d-flex align-items-center justify-content-center">
-            <div id="magicAnimation" class="col-12 col-md-6 col-lg-6 text-center magictime vanishIn">
-              <a href="img/eser.webp" data-fancybox="gallery" data-caption="Gallery A #1">
-                  <img src="img/eser.webp" class="img-fluid" width="600" height="600"/>
-              </a>
-            </div>
-            <div class="piece-description col-12 col-md-6 col-lg-6">
-              <h2 class="card-title">Starry Night (Yıldızlı Gece)</h2>
-              <h3 class="card-title mb-4">Vincent van Gogh (1889)</h3>
-
-              <p>      <b>Ressam :</b> Vincent van Gogh</p>
-              <p>   <b>Boya Türü :</b> Yağlı Boya</p>
-              <p><b>Yayınlanma Tarihi :</b> Eylül 1898</p>
-              <p> <b>Eser Kopyası :</b> Yok</p>
-              <p>       <b>Fiyat :</b> 1.000.000 TL</p>
-            </div>
-          </div>
-          <div class="description-box mt-3">
-            <h3 class="card-title mb-3 animate__animated animate__zoomIn animate__delay-1s">ARKAS KOLEKSİYONU’NDA PENCERE</h3>
-            <p class="m-0 animate__animated animate__zoomIn animate__delay-1s"><b>17.03.2023 – 23.07.2023</b></p>
-            <p class="mb-2 animate__animated animate__zoomIn animate__delay-1s">Arkas Koleksiyonu’nda Pencere” sergisi, pencereyi mimari bir öğe olarak ele almanın ötesinde, pencerenin açıldığı anlam katmanlarına odaklanan kapsamlı bir resim seçkisi sunar. Sergi, 18. yüzyıldan 20. yüzyıla kadar Türkiye’den ve yurt dışından çeşitli sanatçıların resmettiği pencerenin tuvaldeki temsilini sorgular.
-
-              Pencere, perspektif araştırmalarındaki rolünden sembolik kullanımına, sanatta aynı anda birçok formda karşımıza çıkan bir motif olmayı sürdürür. Resim, sanatçının dünyaya açılan penceresidir.  Resim sanatında dış dünyayı içerinin bir parçası haline getiren pencereler; kimi zaman umut, özlem ya da özgürlük gibi en derin duyguları sembolize ederken, kimi zaman hayatın ve varoluşun temsili olarak karşımıza çıkar.
+  
+            <div class="container">
+              <div class="row my-4 section-1">
+                <div class="col-12">
+                  <div class="img-section text-center">
+                    <img src="img/ASM-Logo.png" class="img-fluid animate__animated animate__fadeIn" width="300" height="100">
+                  </div>
+                  <div class="piece-box mt-5 d-flex align-items-center justify-content-center">
+                    <div id="magicAnimation" class="col-12 col-md-12 col-lg-7">
+                       
+                          <div class="f-carousel" id="myCarousel">
+                            <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/31/192x144" data-fancybox="gallery" data-src="https://lipsum.app/id/68/1800x1200">
+                              <img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/31/640x480"/>
+                            </div>
+                            <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/35/192x144" data-fancybox="gallery" data-src="https://lipsum.app/id/68/1800x1200">
+                              <img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/35/640x480"/>
+                            </div>
+                            <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/34/192x144" data-fancybox="gallery" data-src="https://lipsum.app/id/68/1800x1200">
+                              <img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/34/640x480"/>
+                            </div>
+                            <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/60/192x144" data-fancybox="gallery" data-src="https://lipsum.app/id/68/1800x1200">
+                              <img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/60/640x480"/>
+                            </div>
+                            <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/33/192x144" data-fancybox="gallery" data-src="https://lipsum.app/id/68/1800x1200">
+                              <img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/33/640x480"/>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="piece-description col-12 col-md-12 col-lg-5">
+                      <h2 class="card-title animate__animated animate__zoomIn animate__delay-1s">Vincent van Gogh (1889)</h2>
+                      <h3 class="card-title mb-4 animate__animated animate__zoomIn animate__delay-1s">Starry Night (Yıldızlı Gece)</h3>
+                      
+                      <p class="animate__animated animate__lightSpeedInRight animate__delay-1s"><b>Boya Türü :</b> Yağlı Boya</p>
+                      <p class="animate__animated animate__lightSpeedInRight animate__delay-1s"><b>Yayınlanma Tarihi :</b> Eylül 1898</p>
+                    </div>
+                  </div>
+                  <div class="description-box mt-3">
+                    <h3 class="card-title mb-3 animate__animated animate__zoomIn animate__delay-1s">ARKAS KOLEKSİYONU’NDA PENCERE</h3>
+                    <p class="m-0 animate__animated animate__zoomIn animate__delay-1s"><b>17.03.2023 – 23.07.2023</b></p>
+                    <p class="mb-2 animate__animated animate__zoomIn animate__delay-1s">Arkas Koleksiyonu’nda Pencere” sergisi, pencereyi mimari bir öğe olarak ele almanın ötesinde, pencerenin açıldığı anlam katmanlarına odaklanan kapsamlı bir resim seçkisi sunar. Sergi, 18. yüzyıldan 20. yüzyıla kadar Türkiye’den ve yurt dışından çeşitli sanatçıların resmettiği pencerenin tuvaldeki temsilini sorgular.
+        
+                      Pencere, perspektif araştırmalarındaki rolünden sembolik kullanımına, sanatta aynı anda birçok formda karşımıza çıkan bir motif olmayı sürdürür. Resim, sanatçının dünyaya açılan penceresidir.  Resim sanatında dış dünyayı içerinin bir parçası haline getiren pencereler; kimi zaman umut, özlem ya da özgürlük gibi en derin duyguları sembolize ederken, kimi zaman hayatın ve varoluşun temsili olarak karşımıza çıkar.
+                      
+                      “Arkas Koleksiyonu’nda Pencere” sergisi; Jean-Léon Gérôme, Jean-Baptiste Greuze, Paul Signac, John Atkinson Grimshaw, William Adolphe Bouguereau,  Henri Le Sidaner, Albert Marquet, Édouard Frédéric Wilhelm Richter gibi sanatçıların eserlerini biraraya getirmenin yanı sıra, Hoca Ali Rıza, Şevket Dağ, Namık İsmail, Nuri İyem ve Yalçın Karayağız gibi farklı dönemlerden Türk ressamların eserlerine de ev sahipliği yapmaktadır.</p>
+                    <!-- <p class="fw-bold animate__animated animate__lightSpeedInRight animate__delay-1s">2013</p> -->
+                  </div>
+                  <p class="mt-5 text-center mb-0 fw-bold animate__animated animate__fadeIn animate__delay-1s">Lütfen dil seçimi yapınız.</p>
+                  <p class="mb-3 text-center text-muted animate__animated animate__fadeIn animate__delay-1s">Please select a language.</p>
+        
+                  <div class="audio-box d-flex align-items-center justify-content-around">
+                    <div class="col-12 col-md-6 col-lg-6 text-center">
+                      <h2 class="card-title mb-4">Türkçe</h2>
+                      <audio id="turkish-audio" controls>
+                        <!-- <source src="audio/WISER ENG_VO.mp3" type="audio/wav"> -->
+                        <source src="audio/amen-break-no-copyright-remake-120bpm-25924.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+        
+                    <div class="col-12 col-md-6 col-lg-6 text-center">
+                      <h2 class="card-title mb-4">English</h2>
+                      <audio id="english-audio" controls>
+                        <!-- <source src="audio/WISER ENG_VO.mp3" type="audio/wav"> -->
+                        <source src="audio/amen-break-no-copyright-remake-120bpm-25924.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 pb-5">
+                  <div class="video-box text-center mt-3">
+                    <vm-player playsinline>
+                      <vm-video
+                        cross-origin="true"
+                        poster="img/eser.webp"
+                      >
+                        <source
+                          data-src="video/pexels-noman-khan-17436125 (1440p).mp4"
+                          type="video/mp4"
+                        />
+                        <!-- <track
+                          default
+                          kind="subtitles"
+                          src="https://media.vimejs.com/subs/english.vtt"
+                          srclang="en"
+                          label="English"
+                        />
+                        <track
+                          kind="subtitles"
+                          src="https://media.vimejs.com/subs/spanish.vtt"
+                          srclang="es"
+                          label="Spanish"
+                        /> -->
+                      </vm-video>
               
-              “Arkas Koleksiyonu’nda Pencere” sergisi; Jean-Léon Gérôme, Jean-Baptiste Greuze, Paul Signac, John Atkinson Grimshaw, William Adolphe Bouguereau,  Henri Le Sidaner, Albert Marquet, Édouard Frédéric Wilhelm Richter gibi sanatçıların eserlerini biraraya getirmenin yanı sıra, Hoca Ali Rıza, Şevket Dağ, Namık İsmail, Nuri İyem ve Yalçın Karayağız gibi farklı dönemlerden Türk ressamların eserlerine de ev sahipliği yapmaktadır.</p>
-            <!-- <p class="fw-bold animate__animated animate__lightSpeedInRight animate__delay-1s">2013</p> -->
-          </div>
-          <div class="video-box text-center mt-3">
-            <video
-              id="my-video"
-              class="video-js"
-              controls
-              preload="auto"
-              poster="img/eser.webp"
-              width="%100"
-              height="600"
-              data-setup="{}">
-              <source src="video/pexels-noman-khan-17436125 (1440p).mp4" type="video/mp4" />
-              <source src="video/pexels-noman-khan-17436125 (1440p).mp4" type="video/webm" />
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank"
-                  >supports HTML5 video</a
-                >
-              </p>
-            </video>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 pb-5">
-          <p class="mt-5 text-center mb-0 fw-bold animate__animated animate__fadeIn animate__delay-1s">Lütfen dil seçimi yapınız.</p>
-          <p class="mb-3 text-center text-muted animate__animated animate__fadeIn animate__delay-1s">Please select a language.</p>
-
-          <!-- <div class="audio-box mt-5 border-2 border-dark">
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="video/pexels-noman-khan-17436125 (1440p).mp4" class="btn btn-primary animate__animated animate__bounceIn animate__delay-1s" data-fancybox="video-gallery" data-caption="Caption #2">Türkçe <i class="bi bi-play-circle"></i></a>
-              <span class="my-2"></span>
-              
-              <button type="button" class="btn btn-primary animate__animated animate__bounceIn animate__delay-1s" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Türkçe <i class="bi bi-volume-up"></i>
-              </button>
-              <span class="my-2"></span>
-              <a href="video/pexels-noman-khan-17436125 (1440p).mp4" class="btn btn-primary animate__animated animate__bounceIn animate__delay-1s" data-fancybox="video-gallery" data-caption="Caption #2">English <i class="bi bi-play-circle"></i></a>
-              <span class="my-2"></span>
-              
-              <button type="button" class="btn btn-primary animate__animated animate__bounceIn animate__delay-1s" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                English <i class="bi bi-volume-up"></i>
-              </button>
+                      <vm-default-ui></vm-default-ui>
+                    </vm-player>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div> -->
-          <div class="audio-box d-flex align-items-center justify-content-around">
-            <div class="col-12 col-md-6 col-lg-6 text-center">
-              <h2 class="card-title mb-4">Türkçe</h2>
-              <audio controls>
-                <!-- <source src="audio/WISER ENG_VO.mp3" type="audio/wav"> -->
-                <source src="audio/amen-break-no-copyright-remake-120bpm-25924.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-6 text-center">
-              <h2 class="card-title mb-4">English</h2>
-              <audio controls>
-                <!-- <source src="audio/WISER ENG_VO.mp3" type="audio/wav"> -->
-                <source src="audio/amen-break-no-copyright-remake-120bpm-25924.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     
   
@@ -139,7 +160,9 @@
       </div>
     </div>
   </div> -->
-
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^5/dist/vime/vime.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
     <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -179,7 +202,35 @@
             right: ["slideshow", "download", "thumbs", "close"],
           },
         },
-      });    
+      });
+      window.player = document.querySelector('vm-player');
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var turkishAudio = document.getElementById("turkish-audio");
+        var englishAudio = document.getElementById("english-audio");
+
+        turkishAudio.addEventListener("play", function () {
+          if (!englishAudio.paused) {
+            englishAudio.pause();
+          }
+        });
+
+        englishAudio.addEventListener("play", function () {
+          if (!turkishAudio.paused) {
+            turkishAudio.pause();
+          }
+        });
+      });
+      const carouselB = document.getElementById("myCarousel");
+      const options = { 
+        Dots: false,
+        Thumbs: {
+            type: "classic",
+        },
+        
+      };
+
+      new Carousel(carouselB, options, { Thumbs });
     </script>
   </body>
 </html>
