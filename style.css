@@ -32,6 +32,12 @@ p,a,span {
     --animate-duration: 2s;
 }
 
+.piece-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .piece-description {
     padding-top: 260px;
 }
@@ -49,7 +55,7 @@ p,a,span {
     }
 
     .description-box {
-        padding: 0;
+        padding: 10px;
         margin-top: 40px !important;
     }
 
@@ -63,6 +69,10 @@ p,a,span {
 
     .audio-box .col-12:nth-child(2) {
         margin-top: 20px;
+    }
+
+    .piece-box {
+        flex-direction: column;
     }
 
     .piece-description {
